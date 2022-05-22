@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c1b21;
+}
+
+h1:nth-child(1) {
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 1px royalblue;
+    font-size: 160px;
+}
+
+h1:nth-child(2) {
+    color: royalblue;
+    font-size: 160px;
+    animation: animate 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    0% {
+        clip-path: polygon(0% 44%, 4% 56%, 12% 65%, 20% 73%, 30% 75%, 42% 74%, 51% 68%, 61% 54%, 71% 46%, 85% 44%, 94% 50%, 100% 59%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 65%, 3% 78%, 11% 81%, 22% 83%, 32% 76%, 40% 64%, 48% 55%, 61% 56%, 67% 69%, 79% 80%, 91% 81%, 100% 71%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0 65%, 5% 56%, 14% 47%, 24% 47%, 34% 53%, 39% 62%, 48% 71%, 58% 80%, 68% 86%, 83% 85%, 94% 81%, 100% 71%, 100% 100%, 0% 100%);
+    }
+}
